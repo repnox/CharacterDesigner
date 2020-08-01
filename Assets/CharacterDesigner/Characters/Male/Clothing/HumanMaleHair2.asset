@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a35e716174f950e4a837b84354719f59, type: 3}
+  m_Name: HumanMaleHair2
+  m_EditorClassIdentifier: 
+  clothingName: Hair 2
+  clothingSlot: 1
+  clothingMeshDefinition: {fileID: 11400000, guid: f016174b4cf5b5a48927aa5a4ef8b9d2,
+    type: 2}
+  materialDefinition: {fileID: 11400000, guid: 8205fd50998b91a4889d0c26ec24432d, type: 2}

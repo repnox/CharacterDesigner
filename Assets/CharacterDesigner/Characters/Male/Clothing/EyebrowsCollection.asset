@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ca9b0ba732108409a5b9999e084c28, type: 3}
+  m_Name: EyebrowsCollection
+  m_EditorClassIdentifier: 
+  clothingDefinitions:
+  - {fileID: 11400000, guid: 33fd1d2a92dfad3458a93ab02f5348d3, type: 2}
+  - {fileID: 11400000, guid: 9ae7dc8df5a6d2a47a4dbac93727eaee, type: 2}
