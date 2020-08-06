@@ -5,7 +5,7 @@ using UnityEngine;
 namespace CharacterDesigner.UI.Scripts
 {
     [RequireComponent(typeof(Animator))]
-    public class GenderConfigurationCameraHandler : MonoBehaviour
+    public class CharacterDesignerCameraHandler : MonoBehaviour
     {
 
         public Character MaleCharacter;
@@ -16,9 +16,13 @@ namespace CharacterDesigner.UI.Scripts
 
         public TextureConfigurationHelper textureConfigurationHelper;
 
+        public ClothingConfigurationHelper clothingConfigurationHelper;
+
         private Animator animator;
         private int FocusOnHumanMale = Animator.StringToHash("HumanMale");
+        private int FocusOnHumanMaleBody = Animator.StringToHash("HumanMaleBody");
         private int FocusOnHumanFemale = Animator.StringToHash("HumanFemale");
+        private int FocusOnHumanFemaleBody = Animator.StringToHash("HumanFemaleBody");
 
         private void Awake()
         {
@@ -43,16 +47,27 @@ namespace CharacterDesigner.UI.Scripts
 
         }
 
+        public void ShowMaleBody()
+        {
+            animator.SetTrigger(FocusOnHumanMaleBody);
+        }
+
         public void ShowFemale()
         {
             animator.SetTrigger(FocusOnHumanFemale);
             Show(FemaleCharacter);
         }
 
+        public void ShowFemaleBody()
+        {
+            animator.SetTrigger(FocusOnHumanFemaleBody);
+        }
+
         private void Show(Character character)
         {
             faceConfiguratorHelper.SetTargetCharacter(character.body);
             textureConfigurationHelper.SetTargetCharacter(character);
+            clothingConfigurationHelper.SetTargetCharacter(character);
         }
     }
 }
